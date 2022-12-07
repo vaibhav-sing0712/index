@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>2K20-MC-149-Vaibhav Singh 0abe44be</title>
+<title>0abe44be</title>
 <?php require_once "bootstrap.php"; ?>
 </head>
 <body>
