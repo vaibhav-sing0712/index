@@ -1,24 +1,43 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>2K20-MC-149-Vaibhav Singh</title>
-<?php include "bootstrap.php"; ?>
-</head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2K20-MC-149-Vaibhav Singh </title>
+  </head>
 <body>
-<div class="container">
-<h1>Welcome to Broken Rock Paper Scissors</h1>
-<p><strong>Note:</strong> This sample code is only
-partially done and serves only as a starting point for the assignment.
-</p>
-<p>
-<a href="login.php">Please Log In</a>
-</p>
-<p>
-Attempt to go to
-<a href="game.php">game.php</a> without logging in - it should fail with an error message.
-<p>
-<a href="http://www.wa4e.com/code/rps.zip"
- target="_blank">Source Code for this Application</a>
-</p>
-</div>
+  <h1>Welcome to my guessing game</h1>
+  <p>
+    <?php
+      if (!isset($_GET['guess']))
+      {
+        echo("Missing guess parameter");
+      }
+      else if( strlen($_GET['guess'])<1)
+      {
+        echo("Your guess is too short");
+      }
+      else if (!is_numeric($_GET['guess']))
+      {
+        echo("Your guess is not a number");
+      }
+      else if ($_GET['guess']<42)
+      {
+        echo("Your guess is too low");
+      }
+      else if ($_GET['guess']>42)
+      {
+        echo("Your guess is too high");
+      }
+      else
+      {
+        echo("Congratulations-You are right");
+      }
+    ?>
+  </p>
 </body>
+</html>
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
