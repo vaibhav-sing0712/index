@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Guessing Game for 29454f76 </title>
+    <title>Guessing Game for '29454f76'  </title>
   </head>
 <body>
   <h1>Welcome to my guessing game</h1>
